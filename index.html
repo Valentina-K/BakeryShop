@@ -8,12 +8,17 @@
 <body>
    <header>
     <nav>
-        <div class="logo"></div>
+        <div class="logo"><a href="#">
+            <svg width="114" heihgt="56">
+                <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+
+        </a></div>
         <ul>
-            <li>Наші традиції</li>  
-            <li>Шеф-кухарі</li>
-            <li>Формати</li>
-            <li>Контакти</li>
+            <li><a href="#activities">Наші традиції</a></li>  
+            <li><a href="#chiefs">Шеф-кухарі</a></li>
+            <li><a href="#formats">Формати</a></li>
+            <li><a href="#joinus">Контакти</a></li>
         </ul>
         <button>
             Замовити дзвінок
@@ -27,7 +32,7 @@
         </div>
         
     </section>
-    <section>
+    <section  id="achivmentsbar">
         <div class="achivmentsbar">
             <ul>
                 <li>Великий попит на ринку</li>
@@ -36,7 +41,7 @@
             </ul>
         </div>
     </section>
-    <section>
+    <section  id="activities">
         <div class="activities">
             <h2>Новий формат традицій</h2>
             <p>shop bakery — це пекарня, яка взяла все найкраще, і зберегла смак традиційної випічки та натуральність інгредієнтів.</p>
@@ -44,10 +49,10 @@
                 5 хвилин і замовлення готове. 
                 А ще у наших пекарень стильний дизайн 
                 та висока якість обслуговування!</p>
-                <img src="" alt="">
+                <img srcset="./images/bakerman.jpg 1x, ./images/bakerman@2x.jpg 2x" src="./images/bakerman.jpg" alt="пекар везе батони і посміхається">
         </div>
     </section>
-    <section>
+    <section  id="chiefs">
         <div class="chiefs">
             <h2>Наші найкращі 
                 шеф -кухарі</h2>
@@ -58,45 +63,54 @@
                         у життя цікаві та смачні ідеї.</p>
                         <p>Я випічу для вас
                         найсмачніщі вироби!</p>
-                        <img src="" alt="">
+                        <img srcset="./images/anastasia.jpg 1x, ./images/anastasia@2x.jpg 2x" src="./images/anastasia.jpg" alt="">
                 </article>
                 <article>
                     <h3>Влад</h3>
                         <p>Привіт, я Влад!</p>
                         <p>Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з Вами через нашу випічку!</p>
                         <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
-                        <img src="" alt="">
+                        <img srcset="./images/vlad.jpg 1x, ./images/vlad@2x.jpg 2x" src="./images/vlad.jpg" alt="">
                 </article>
         </div>
     </section>
-    <section>
+    <section  id="formats">
         <div class="formats">
             <h2>Формати</h2>
+            <svg width="44" height="44">
+                <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
             <ul>
-                <li><article><h3>Walrus</h3><p>Площа: до 120 м2
+                <li><article><img srcset="./images/walrus.jpg 1x, ./images/walrus@2x.jpg 2x" src="./images/walrus.jpg" alt="">
+                    <h3>Walrus</h3><p>Площа: до 120 м2
                     Меню: розширене меню 
                     Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби
                     Посадкові місця: є</p></article></li>
-                <li><article><h3>Horseshoe</h3><p>Площа: до 25 м2
+                <li><article><img srcset="./images/horseshoe.jpg 1x, ./images/horseshoe@2x.jpg 2x" src="./images/horseshoe.jpg" alt="">
+                    <h3>Horseshoe</h3><p>Площа: до 25 м2
                     Меню: найпопулярніші позиції меню
                     Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря
                     Посадкові місця: відсутні</p></article></li>
-                <li><article><h3>Handlebar</h3><p>Площа: до 15 м2
+                <li><article><img srcset="./images/handlebar.jpg 1x, ./images/handlebar@2x.jpg 2x" src="./images/handlebar.jpg" alt="">
+                    <h3>Handlebar</h3><p>Площа: до 15 м2
                     Меню: найпопулярніші позиції меню 
                     Штат: 1 продавець, 1 пекар, 1 помічник пекаря
                     Посадкові місця: відсутні</p></article></li>
             </ul>
+            <svg width="44" height="44">
+                <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
         </div>
     </section>
-    <section>
+    <section  id="joinus">
         <div class="joinus">
             <h2>Приєднуйся до 
                 мережі пекарень</h2>
             <p>Заповни форму, щоб ми звʼязались з тобою!</p>
             <form>
-                <input />
-                <input />
-                <input />
+                <label for="name"></label><input id="name" name="name" placeholder="Ім’я"/>
+                <label for="phone"></label><input id="phone" name="phone" placeholder="Телефон"/>
+                <label for="email"></label><input id="email" name="email" placeholder="Електронна пошта"/>
                 <button>Замовити дзвінок</button>
                 <p>Натискаючи на кнопку я погоджуюсь з <a href="#">політикою конфіденційності</a></p>
             </form>
@@ -106,7 +120,48 @@
     </section>
     </main>
     <footer>
-
+        <nav>
+            <div class="logo"><a href="#"></a></div>
+            <ul>
+                <li><a href="#activities">Наші традиції</a></li>
+                <li><a href="#chiefs">Шеф-кухарі</a></li>
+                <li><a href="#formats">Формати</a></li>
+                <li><a href="#joinus">Контакти</a></li>
+            </ul>
+            <button>
+                Замовити дзвінок
+            </button>
+        </nav>
+        <address>
+            <a href="tel:+380960000007">+ 38 (096) 000 00 07</a>
+            <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+            <a href="https://maps.app.goo.gl/g5xFAgdCQjUigpLx9" target="_blank">Україна, м. Київ,
+            вул. Січових Стрільців 54</a>
+            <a href="">
+                <svg width="32" height="32">
+                <use href="./images/icons.svg#icon-facebook"></use>
+            </svg></a>
+            <a href="">
+                <svg width="32" height="32">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+            </a>
+        </address>
+        <p><a href="#">Політика конфіденційності</a></p>
+        <p>&copy; 2022 Дані захищені</p>
     </footer>
+    <div>
+        <div>
+            <h2>Замовити дзвінок</h2>
+            <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+            <form>
+                    <label for="name"></label><input id="name" name="name" placeholder="Ім’я" />
+                    <label for="phone"></label><input id="phone" name="phone" placeholder="Телефон" />
+                    <label for="email"></label><input id="email" name="email" placeholder="Електронна пошта" />
+                    <button>Замовити дзвінок</button>
+                    <p>Натискаючи на кнопку я погоджуюсь з <a href="#">політикою конфіденційності</a></p>
+            </form>
+        </div>
+    </div>
 </body>    
 </html>
