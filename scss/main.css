@@ -56,23 +56,8 @@ ul {
   list-style-type: none;
 }
 
-.button {
+button {
   border-radius: 8px;
-  padding: 16px 24px;
-  border: 2px solid var(--color-brand-normal);
-  background: var(--color-brand-normal);
-  color: var(--color-primary-light);
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-}
-
-.icon-button {
-  width: 24px;
-  height: 24px;
-  border: none;
-  background-color: transparent;
 }
 
 .link {
@@ -113,23 +98,5 @@ ul {
 @media screen and (min-width: 768px) {
   .header-nav {
     display: block;
-  }
-}
-
-.hero-section {
-  padding: 124px 34px;
-  background-image: linear-gradient(98deg, rgba(18, 18, 17, 0.78) -9.41%, rgba(18, 18, 17, 0.6) 52.95%, rgba(18, 18, 17, 0) 97.76%), url("../../images/hero.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-}
-@media screen and (min-width: 768px) {
-  .hero-section {
-    padding: 272px 0;
-  }
-}
-@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero-section {
-    background-image: linear-gradient(102.76deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url("../../images/hero@2x.jpg");
   }
 }/*# sourceMappingURL=main.css.map */

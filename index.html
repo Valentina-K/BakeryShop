@@ -12,11 +12,11 @@
       rel="stylesheet"
     />
   </head>
-  <body style="font-family: 'Poppins'">
+  <body>
     <header>
-      <nav>
+      <nav class="header-nav">
         <a class="logo" href="/">
-            <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
+          <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
         </a>
         <ul>
           <li><a href="#activities" class="link">Наші традиції</a></li>
@@ -25,28 +25,44 @@
           <li><a href="#joinus" class="link">Контакти</a></li>
         </ul>
       </nav>
-      <button>Замовити дзвінок</button>
+      <button class="button">Замовити дзвінок</button>
       <div class="header-mobile">
         <a class="logo" href="/">
-            <img src="./images/logo-dark.svg" alt="Логотип сучасної пекарні" />
-        </a>   
-      <button>
-        <svg width="24" heihgt="24">
-          <use href="./images/icons.svg#icon-menu"></use>
-        </svg>
-      </button>
+          <img src="./images/logo-dark.svg" alt="Логотип сучасної пекарні" />
+        </a>
+        <button class="icon-button">
+          <svg width="24" heihgt="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
       <div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M9 6L15 12L21 6" stroke="#31261A" stroke-width="2" stroke-linecap="round"/>
-            <path d="M9 18L15 12L21 18" stroke="#31261A" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-        <!-- <button>
+        <!-- <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M9 6L15 12L21 6"
+            stroke="#31261A"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M9 18L15 12L21 18"
+            stroke="#31261A"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg> -->
+        <button class="icon-button">
           <svg width="24" heihgt="24">
-            <use href="./images/icons.svg#icon-close-button"></use>
+            <use href="./images/icons.svg#icon-close"></use>
           </svg>
-        </button> -->
-        
+        </button>
+
         <ul class="mobile-menu__list">
           <li>
             <a class="mobile-menu__link" href="#traditions-section">
@@ -66,7 +82,7 @@
       </div>
     </header>
     <main>
-      <section>
+      <section class="hero-section">
         <div class="hero">
           <h1>Сучасна пекарня</h1>
         </div>
@@ -209,7 +225,7 @@
             ><input id="phone" name="phone" placeholder="Телефон" />
             <label for="email"></label
             ><input id="email" name="email" placeholder="Електронна пошта" />
-            <button>Замовити дзвінок</button>
+            <button class="button">Замовити дзвінок</button>
             <p>
               Натискаючи на кнопку я погоджуюсь з
               <a href="#">політикою конфіденційності</a>
@@ -235,7 +251,7 @@
           <li><a href="#formats">Формати</a></li>
           <li><a href="#joinus">Контакти</a></li>
         </ul>
-        <button>Замовити дзвінок</button>
+        <button class="button">Замовити дзвінок</button>
       </nav>
       <address>
         <a href="tel:+380960000007">+ 38 (096) 000 00 07</a>
@@ -267,7 +283,7 @@
           ><input id="phone" name="phone" placeholder="Телефон" />
           <label for="email"></label
           ><input id="email" name="email" placeholder="Електронна пошта" />
-          <button>Замовити дзвінок</button>
+          <button class="button">Замовити дзвінок</button>
           <p>
             Натискаючи на кнопку я погоджуюсь з
             <a href="#">політикою конфіденційності</a>
