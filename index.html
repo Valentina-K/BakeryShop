@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
   </head>
-  <body style="font-family: 'Poppins'">
+  <body>
     <header>
       <nav>
         <a class="logo" href="/">
@@ -25,27 +25,23 @@
           <li><a href="#joinus" class="link">Контакти</a></li>
         </ul>
       </nav>
-      <button>Замовити дзвінок</button>
+      <button type="button" class="button">Замовити дзвінок</button>
       <div class="header-mobile">
         <a class="logo" href="/">
             <img src="./images/logo-dark.svg" alt="Логотип сучасної пекарні" />
         </a>   
-      <button>
+      <button type="button" class="icon-button">
         <svg width="24" heihgt="24">
           <use href="./images/icons.svg#icon-menu"></use>
         </svg>
       </button>
       </div>
       <div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M9 6L15 12L21 6" stroke="#31261A" stroke-width="2" stroke-linecap="round"/>
-            <path d="M9 18L15 12L21 18" stroke="#31261A" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-        <!-- <button>
+        <button type="button" class="icon-button">
           <svg width="24" heihgt="24">
-            <use href="./images/icons.svg#icon-close-button"></use>
+            <use href="./images/icons.svg#icon-close"></use>
           </svg>
-        </button> -->
+        </button>
         
         <ul class="mobile-menu__list">
           <li>
@@ -66,22 +62,23 @@
       </div>
     </header>
     <main>
-      <section>
-        <div class="hero">
-          <h1>Сучасна пекарня</h1>
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="hero-title"><span class="hero-title__first">Сучасна</span> пекарня</h1>
+          <button type="button" class="button hero-button">Замовити дзвінок</button>
         </div>
       </section>
-      <section id="achivmentsbar">
-        <div class="achivmentsbar">
+      <section id="achivmentsbar" class="achivmentsbar-section">
+        <div class="container">
           <ul>
-            <li>Великий попит на ринку</li>
-            <li>Доступні за бюджетом формати</li>
-            <li>Досвідчена управлінська команда</li>
+            <li class="achivmentsbar-list__item">Великий попит на ринку</li>
+            <li class="achivmentsbar-list__item">Доступні за бюджетом формати</li>
+            <li class="achivmentsbar-list__item">Досвідчена управлінська команда</li>
           </ul>
         </div>
       </section>
-      <section id="activities">
-        <div class="activities">
+      <section id="activities" class="activities-section">
+        <div class="container">
           <h2>Новий формат традицій</h2>
           <p>
             shop bakery — це пекарня, яка взяла все найкраще, і зберегла смак
@@ -98,8 +95,8 @@
           />
         </div>
       </section>
-      <section id="chiefs">
-        <div class="chiefs">
+      <section id="chiefs" class="chiefs-section">
+        <div class="container">
           <h2>Наші найкращі шеф -кухарі</h2>
           <article>
             <h3>Настя</h3>
@@ -128,8 +125,8 @@
           </article>
         </div>
       </section>
-      <section id="formats">
-        <div class="formats">
+      <section id="formats" class="formats-section">
+        <div class="container">
           <h2>Формати</h2>
           <svg width="44" height="44">
             <use href="./images/icons.svg#icon-arrow"></use>
@@ -198,8 +195,8 @@
           </div>
         </div>
       </section>
-      <section id="joinus">
-        <div class="joinus">
+      <section id="joinus" class="joinus-section">
+        <div class="container">
           <h2>Приєднуйся до мережі пекарень</h2>
           <p>Заповни форму, щоб ми звʼязались з тобою!</p>
           <form>
@@ -209,7 +206,7 @@
             ><input id="phone" name="phone" placeholder="Телефон" />
             <label for="email"></label
             ><input id="email" name="email" placeholder="Електронна пошта" />
-            <button>Замовити дзвінок</button>
+            <button type="button" class="button">Замовити дзвінок</button>
             <p>
               Натискаючи на кнопку я погоджуюсь з
               <a href="#">політикою конфіденційності</a>
@@ -226,7 +223,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer-section">
       <nav>
         <div class="logo"><a href="#"></a></div>
         <ul>
@@ -235,7 +232,7 @@
           <li><a href="#formats">Формати</a></li>
           <li><a href="#joinus">Контакти</a></li>
         </ul>
-        <button>Замовити дзвінок</button>
+        <button type="button" class="button">Замовити дзвінок</button>
       </nav>
       <address>
         <a href="tel:+380960000007">+ 38 (096) 000 00 07</a>
@@ -245,8 +242,8 @@
         >
         <a href="">
           <svg width="32" height="32">
-            <use href="./images/icons.svg#icon-facebook"></use></svg
-        ></a>
+            <use href="./images/icons.svg#icon-facebook"></use></svg>
+          </a>
         <a href="">
           <svg width="32" height="32">
             <use href="./images/icons.svg#icon-instagram"></use>
@@ -267,7 +264,7 @@
           ><input id="phone" name="phone" placeholder="Телефон" />
           <label for="email"></label
           ><input id="email" name="email" placeholder="Електронна пошта" />
-          <button>Замовити дзвінок</button>
+          <button type="button" class="button">Замовити дзвінок</button>
           <p>
             Натискаючи на кнопку я погоджуюсь з
             <a href="#">політикою конфіденційності</a>
