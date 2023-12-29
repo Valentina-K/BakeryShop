@@ -64,6 +64,17 @@ ul {
   padding: 16px 24px;
   color: var(--color-primary-light);
   display: block;
+  cursor: pointer;
+}
+
+.icon-button {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  fill: var(--color-primary-light);
 }
 
 .link {
@@ -89,37 +100,97 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 1288px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
 }
+@media screen and (min-width: 1280px) {
+  .container {
+    padding: 0 100px;
+  }
+}
 
-.header-mobile {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 16px;
 }
 @media screen and (min-width: 768px) {
-  .header-mobile {
+  .header {
+    padding-top: 32px;
+  }
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+.header__menu {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__menu {
+    justify-content: center;
+  }
+}
+.header__button {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__button {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__button--open {
     display: none;
   }
 }
 
 .hero-section {
-  padding: 122px 0 22px;
+  padding: 124px 0;
   background: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url("../../images/hero.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 1280px) {
+  .hero-section {
+    padding: 272px 0;
+  }
+}
 
 .hero-title {
   margin-bottom: 48px;
   font-size: 67px;
   font-weight: 900;
+  line-height: 1;
   color: var(--color-primary-light);
   text-align: center;
+}
+@media screen and (min-width: 1280px) {
+  .hero-title {
+    margin-bottom: 0;
+    font-size: 128px;
+    line-height: 1.5;
+  }
 }
 
 .hero-title__first {
@@ -128,6 +199,11 @@ ul {
 
 .hero-button {
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .hero-button {
+    display: none;
+  }
 }
 
 .achivmentsbar-section {
@@ -141,4 +217,45 @@ ul {
 
 .achivmentsbar-list__item {
   text-align: center;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  padding: 16px 24px;
+  background-color: var(--color-primary-light);
+  transform: translateX(100%);
+  transition: transform 0.3s;
+}
+.mobile-menu__button--close {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  stroke: var(--color-primary-dark);
+  z-index: 3;
+}
+.mobile-menu__logo {
+  margin-bottom: 32px;
+}
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.mobile-menu__link {
+  color: var(--color-primary-dark);
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.mobile-menu__link:hover {
+  color: var(--color-brand-normal);
 }/*# sourceMappingURL=main.css.map */

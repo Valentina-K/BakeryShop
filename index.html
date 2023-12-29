@@ -13,67 +13,88 @@
     />
   </head>
   <body>
-    <header>
-      <nav>
-        <a class="logo" href="/">
-            <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
-        </a>
-        <ul>
-          <li><a href="#activities" class="link">Наші традиції</a></li>
-          <li><a href="#chiefs" class="link">Шеф-кухарі</a></li>
-          <li><a href="#formats" class="link">Формати</a></li>
-          <li><a href="#joinus" class="link">Контакти</a></li>
-        </ul>
-      </nav>
-      <button type="button" class="button">Замовити дзвінок</button>
-      <div class="header-mobile">
-        <a class="logo" href="/">
-            <img src="./images/logo-dark.svg" alt="Логотип сучасної пекарні" />
-        </a>   
-      <button type="button" class="icon-button">
-        <svg width="24" heihgt="24">
-          <use href="./images/icons.svg#icon-menu"></use>
-        </svg>
-      </button>
-      </div>
-      <div>
-        <button type="button" class="icon-button">
-          <svg width="24" heihgt="24">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        
-        <ul class="mobile-menu__list">
-          <li>
-            <a class="mobile-menu__link" href="#traditions-section">
-              Наші традиції
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <nav class="header__nav">
+            <a class="logo" href="/">
+              <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
             </a>
-          </li>
-          <li>
-            <a class="mobile-menu__link" href="#chefs-section"> Шеф-кухарі </a>
-          </li>
-          <li>
-            <a class="mobile-menu__link" href="#formats-section">Формати</a>
-          </li>
-          <li>
-            <a class="mobile-menu__link" href="#contact-section"> Контакти </a>
-          </li>
-        </ul>
+            <ul class="header__menu">
+              <li><a href="#activities" class="link">Наші традиції</a></li>
+              <li><a href="#chiefs" class="link">Шеф-кухарі</a></li>
+              <li><a href="#formats" class="link">Формати</a></li>
+              <li><a href="#joinus" class="link">Контакти</a></li>
+            </ul>
+          </nav>
+          <button type="button" class="button header__button">
+            Замовити дзвінок
+          </button>
+          <button type="button" class="icon-button header__button--open">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button
+              type="button"
+              class="icon-button mobile-menu__button--close"
+            >
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <a class="logo mobile-menu__logo" href="/">
+              <img
+                src="./images/logo-dark.svg"
+                alt="Логотип сучасної пекарні"
+              />
+            </a>
+            <ul class="mobile-menu__list">
+              <li>
+                <a class="mobile-menu__link" href="#traditions-section">
+                  Наші традиції
+                </a>
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="#chefs-section">
+                  Шеф-кухарі
+                </a>
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="#formats-section">Формати</a>
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="#contact-section">
+                  Контакти
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title"><span class="hero-title__first">Сучасна</span> пекарня</h1>
-          <button type="button" class="button hero-button">Замовити дзвінок</button>
+          <h1 class="hero-title">
+            <span class="hero-title__first">Сучасна</span> пекарня
+          </h1>
+          <button type="button" class="button hero-button">
+            Замовити дзвінок
+          </button>
         </div>
       </section>
       <section id="achivmentsbar" class="achivmentsbar-section">
         <div class="container">
           <ul>
             <li class="achivmentsbar-list__item">Великий попит на ринку</li>
-            <li class="achivmentsbar-list__item">Доступні за бюджетом формати</li>
-            <li class="achivmentsbar-list__item">Досвідчена управлінська команда</li>
+            <li class="achivmentsbar-list__item">
+              Доступні за бюджетом формати
+            </li>
+            <li class="achivmentsbar-list__item">
+              Досвідчена управлінська команда
+            </li>
           </ul>
         </div>
       </section>
@@ -242,8 +263,9 @@
         >
         <a href="">
           <svg width="32" height="32">
-            <use href="./images/icons.svg#icon-facebook"></use></svg>
-          </a>
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
         <a href="">
           <svg width="32" height="32">
             <use href="./images/icons.svg#icon-instagram"></use>

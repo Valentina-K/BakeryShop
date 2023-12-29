@@ -1,8 +1,20 @@
-.button{
-    border-radius: 8px;
-border: 2px solid var(--color-brand-normal);
-background: var(--color-brand-normal);
-width:204px; padding:16px 24px;
-color: var(--color-primary-light);
-display: block;
+.button {
+  border-radius: 8px;
+  border: 2px solid var(--color-brand-normal);
+  background: var(--color-brand-normal);
+  width: 204px;
+  padding: 16px 24px;
+  color: var(--color-primary-light);
+  display: block;
+  cursor: pointer;
+}
+
+.icon-button {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  fill: var(--color-primary-light);
 }
