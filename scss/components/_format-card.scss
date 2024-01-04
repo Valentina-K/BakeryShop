@@ -1,0 +1,27 @@
+.format-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 321px;
+  height: 442px;
+  padding: 24px;
+  overflow: hidden;
+
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 27.54%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    var(--color-primary-dark) 100%
+  );
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+}
