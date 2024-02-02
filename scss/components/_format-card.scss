@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 321px;
+  width: 320px;
   height: 442px;
   padding: 24px;
   overflow: hidden;
@@ -15,6 +15,11 @@
     rgba(49, 38, 26, 0.71) 72.92%,
     var(--color-primary-dark) 100%
   );
+
+  @media screen and (min-width: 768px) {
+    width: 348px;
+    height: 444px;
+  }
 
   &__image {
     position: absolute;

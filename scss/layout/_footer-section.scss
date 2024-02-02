@@ -1,0 +1,132 @@
+.footer-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px 68px;
+  font-size: 14px;
+  background-color: var(--color-primary-dark);
+  background-image: url("../../images/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    padding: 32px 100px;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  &::after {
+    width: 111px;
+    height: 120px;
+    right: -8px;
+    bottom: -28px;
+    background-image: url("../../images/bred-right.png");
+
+    @media screen and (min-width: 768px) {
+      right: 0;
+      top: auto;
+      left: auto;
+      bottom: 0;
+      width: 380px;
+      height: 190px;
+      background-image: url("../../images/bred-right-desc.png");
+    }
+  }
+
+  &::before {
+    top: 10px;
+    left: 10px;
+    width: 92px;
+    height: 196px;
+    background-image: url("../../images/bred-left.png");
+
+    @media screen and (min-width: 768px) {
+      left: 0;
+      top: auto;
+      right: auto;
+      width: 180px;
+      height: 120px;
+      background-image: url("../../images/bred-left-desc.png");
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 166px;
+    }
+  }
+
+  &__logo {
+    @media screen and (min-width: 768px) {
+      width: 108px;
+      height: 57px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    @media screen and (min-width: 768px) {
+      gap: 16px;
+      align-items: start;
+    }
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+    @media screen and (min-width: 768px) {
+      gap: 16px;
+      align-items: start;
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 22px;
+  }
+
+  &__policy {
+    color: var(--color-secondary-dark);
+    font-size: 12px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.policy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  @media screen and (min-width: 768px) {
+    align-items: start;
+  }
+}
+
+.policy > p {
+  margin-bottom: 0;
+}

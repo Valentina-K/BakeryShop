@@ -6,7 +6,7 @@ const swiper = new Swiper(".swiper", {
   breakpoints: {
     // when window width is >= 480px
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
     1280: {
       slidesPerView: 3,
@@ -26,4 +26,4 @@ const swiper = new Swiper(".swiper", {
 
 console.dir(swiper);
 
-swiper.init();
+//swiper.init();
